@@ -20,6 +20,7 @@ public class Ftp {
             }
             // envoyer username , password et voir la reponse
             out.println("USER "+user);
+             //hello
             reponse=reader.readLine();
             System.out.println(reponse);
             if(!reponse.startsWith("331")){
