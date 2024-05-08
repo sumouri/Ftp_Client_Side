@@ -18,7 +18,7 @@ public class Ftp {
             if(!reponse.startsWith("220")){
                 throw new IOException("Erreur de connexion au Ftp : "+reponse);
             }
-            // envoyer username , password et voir la reponse
+            // envoyer username , password et voir la reponse !!
             out.println("USER "+user);
              //hello
             reponse=reader.readLine();
